@@ -10,10 +10,15 @@ button{
     margin:5px;
     background: white;
 }
+.box>.operation {
+    width: 70px;
+    float: left;
+    padding-left: 3px;
+}
 .operation button{
     width: 60px;
     height: 60px;
-    margin:5px;
+    margin: 5px;
     background: #eee;
 }
 .enter{
@@ -22,10 +27,13 @@ button{
     width: 60px;
 }
 .result{
-    width: 278px;
+    width: 430px;
     margin: 6px;
     height: 50px;
     border-radius: 5px;
+    text-align: right;
+    text-indent: 50px;
+    font-size: 20px;
 }
 
 .box{

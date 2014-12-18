@@ -1,45 +1,59 @@
 
-  <html>
+<html>
+<head>
   <title>calculator</title>
-  <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
-  <link rel="apple-touch-icon" href="/icon.png">
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport">
+  <link rel="apple-touch-icon" href="http://localhost:63342/icon.png">
+  <link rel="stylesheet" type="text/css" href="./main.css">
 </head>
 <body>
   <div class="box">
     <div>
-      <input class="result" value="0"></input>
+      <input class="result" readonly="readonly" value="0">
     </div>
     <div style="float:left;">
       <div class="operation">
-        <button class='clear'>c</button>
+        <button class="clear">c</button>
         <button class="del">DEL</button>
-        <button class="math" data-value='4'>/</button>
+        <button class="math" data-value="4">/</button>
       </div>
       <div class="number">
         <button>7</button>
         <button>8</button>
-        <button>9</button><br/>
+        <button>9</button><br>
         <button>4</button>
         <button>5</button>
-        <button>6</button><br/>
+        <button>6</button><br>
         <button>1</button>
         <button>2</button>
-        <button>3</button><br/>
+        <button>3</button><br>
         <button style="width:133px">0</button>
         <button>.</button>
       </div>
     </div>
-    <div class="operation" style="width:70px; overflow:auto; padding-left:3px;">
-      <button class="math" data-value='3'>x</button>
-      <button class="math" data-value='1'>+</button>
-      <button class="math" data-value='2'>-</button>
+    <div class="operation" >
+      <button class="math" data-value="3">x</button>
+      <button class="math" data-value="1">+</button>
+      <button class="math" data-value="2">-</button>
       <button style="height:130px;" class="opr_enter">=</button>
     </div>
+    <div class="operation" >
+      <button class="math" data-value="3">sin</button>
+      <button class="math" data-value="1">cos</button>
+      <button class="math" data-value="2">tan</button>
+      <button class="math" data-value="1">&#8730;</button>
+      <button class="math" data-value="2">n!</button>
+    </div>
+    <div class="operation" style="overflow:auto">
+      <button class="math" data-value="3">arcsin</button>
+      <button class="math" data-value="1">arccos</button>
+      <button class="math" data-value="2">arctan</button>
+      <button class="math" data-value="1">&#13265;</button>
+      <button class="math" data-value="2">x^n </button>
+    </div>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="main.js"></script>
+    <script src="./jquery-1.9.1.min.js"></script>
+    <script src="./main.js"></script>
 
-</body>
 
-</html>
+
